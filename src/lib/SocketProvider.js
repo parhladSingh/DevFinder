@@ -2,10 +2,10 @@ import { io } from 'socket.io-client';
 import { EventEmitter } from 'events';
 
 let socket;
-const socketEmitter = new EventEmitter(); // Correctly initialized EventEmitter
+const socketEmitter = new EventEmitter(); 
 
 export const initializeSocket = () => {
-    socket = io('http://localhost:3001/');
+    socket = io('https://devfinderbackend.onrender.com//');
 
     socket.on('connect_error', (err) => {
         console.log("Error in connecting socket: " + err);

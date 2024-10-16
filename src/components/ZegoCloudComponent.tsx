@@ -1,10 +1,10 @@
 // ZegoCloudComponent.tsx
 import React, { useEffect, useRef, useState } from 'react';
-import { ZegoUIKitPrebuilt } from '@zegocloud/zego-uikit-prebuilt'; // Adjust if necessary
+import { ZegoUIKitPrebuilt } from '@zegocloud/zego-uikit-prebuilt';
 
-// Define an interface for props
+
 interface ZegoCloudComponentProps {
-  roomId: string | null; // You can adjust the type based on your logic
+  roomId: string | null; 
 }
 
 const ZegoCloudComponent: React.FC<ZegoCloudComponentProps> = ({ roomId }) => {

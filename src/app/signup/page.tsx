@@ -70,20 +70,6 @@ function SignUp() {
       setLoading(false);
     }
   };
-  //   try {
-  //     setLoading(true);
-  //     // Use 'values' instead of 'user' here
-  //     const response = await axios.post("/api/users/signup", user);
-  //     toast.success("SignUp success");
-  //     router.push("/login");
-  //   } catch (error: any) {
-  //     console.log("SignUp failed", error.message);
-  //     toast.error(error.message);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-  
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gray-100 dark:bg-black dark: bg-grid-white/[0.2]">
       <div className="relative w-full max-w-md p-8 bg-white rounded-lg shadow-md dark:bg-black ">
