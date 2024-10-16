@@ -13,8 +13,8 @@ const ZegoCloudComponent: React.FC<ZegoCloudComponentProps> = ({ roomId }) => {
 
   useEffect(() => {
     if (roomId && meetingRef.current && !hasJoinedRoom) {
-      const appID = 393650276;
-      const serverSecret = "2327fd0f41a4a78c4c5a612666c56ca3";
+      const appID = 450396304;
+      const serverSecret = "c19fdb9faf7395793d675817ccb24dcc";
       const userID = String(new Date().getTime());
 
       const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
