@@ -5,7 +5,7 @@ let socket;
 const socketEmitter = new EventEmitter(); 
 
 export const initializeSocket = () => {
-    socket = io('https://devfinderbackend.onrender.com//');
+    socket = io('https://devfinderbackend.onrender.com/');
 
     socket.on('connect_error', (err) => {
         console.log("Error in connecting socket: " + err);
