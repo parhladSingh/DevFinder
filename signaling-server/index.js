@@ -9,6 +9,7 @@ const io = new Server(server, {
   cors: {
     origin: "*",
     methods: ["GET", "POST"],
+    credentials: true,
   },
 });
 
@@ -43,7 +44,7 @@ io.on("connection", (socket) => {
         opponentUser = user;
         break;
       }
-    } 
+    }
 
     if (opponentUser) {
       opponentUser.socket.emit("new_notification", {
@@ -60,12 +61,19 @@ io.on("connection", (socket) => {
     io.to(opponentSocketId).emit("opponent_joined");
   });
 
+  // socket.on("opponent_rejected", ({ email }) => {
+  //   const opponentSocketId = getSocketIdByEmail(allUsers, email);
+  //   if (opponentSocketId) {
+  //     io.to(opponentSocketId).emit("opponent_rejected");
+  //   } else {
+  //     console.log(`No socket found for ${email}`);
+  //   }
+  // });
 
-
-  socket.on("opponent_rejected", ({ email }) => {
+  socket.on("opponent_rejected", ({ roomId, email }) => {
     const opponentSocketId = getSocketIdByEmail(allUsers, email);
     if (opponentSocketId) {
-      io.to(opponentSocketId).emit("opponent_rejected");
+      io.to(opponentSocketId).emit("opponent_rejected", { roomId });
     } else {
       console.log(`No socket found for ${email}`);
     }
@@ -100,4 +108,3 @@ const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
   console.log(`Signaling server is running on port http://localhost:${PORT}`);
 });
-  
