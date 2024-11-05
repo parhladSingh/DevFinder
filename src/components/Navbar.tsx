@@ -387,14 +387,14 @@ const Navbar = () => {
       </div>
 
       {/* Small screen view - Scroll icon to show Browse and Your Room */}
+
       <div className="md:hidden flex items-center justify-center flex-1 ml-9 h-[26px] w-[28px]">
-        {user && isAuthenticated && pathname === "/" && (
+        {user && isAuthenticated && (
           <>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white"
             >
-              {/* Toggle between Chevron icons */}
               {isMenuOpen ? (
                 <ChevronDownIcon className="h-6 w-6 ml-15" aria-hidden="true" />
               ) : (
@@ -405,7 +405,7 @@ const Navbar = () => {
               )}
             </button>
             {isMenuOpen && (
-              <div className="absolute top-12  bg-gray-800 bg-opacity-50 p-4 rounded-md shadow-lg z-50">
+              <div className="absolute top-12 bg-gray-800 bg-opacity-50 p-4 rounded-md shadow-lg z-50">
                 <Link
                   href="/room"
                   className="block mx-2 my-2 text-white font-bold text-lg hover:text-[#caa2e5]"
