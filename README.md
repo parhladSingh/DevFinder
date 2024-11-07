@@ -9,24 +9,24 @@ Welcome to DevFinder, a web application that connects developers by providing a 
 ## 🚀Technologies Used
 #### Frontend:
 - Next.js: Server-side rendering and client-side SPA functionality.
--Tailwind CSS: Modern, utility-first styling.
--TypeScript: Strong typing for enhanced maintainability.
--Shadcn UI: For a cohesive and sleek user interface.
+- Tailwind CSS: Modern, utility-first styling.
+- TypeScript: Strong typing for enhanced maintainability.
+- Shadcn UI: For a cohesive and sleek user interface.
 
 #### Backend:
--Node.js: Handling server-side logic.
--MongoDB: Storing developer data and project information.
+- Node.js: Handling server-side logic.
+- MongoDB: Storing developer data and project information.
 
 #### Real-time Communication:
--Socket.io 
--ZegoCloud: Integrated video call functionality for real-time communication between developers.
+- Socket.io 
+- ZegoCloud: Integrated video call functionality for real-time communication between developers.
 
 ## 🔑Key Functionality:
 - User Registration & Login: Users can create accounts and access personalized features.
--Create and Manage Rooms: Developers can create project rooms to showcase their work and skills.
--Browse Other Rooms: Discover other developers’ projects, connect, and collaborate.
--Real-Time Video Calling: Connect face-to-face through ZegoCloud’s video integration.
--Room Updates & Deletion: Full CRUD (Create, Read, Update, Delete) capabilities for managing rooms.
+- Create and Manage Rooms: Developers can create project rooms to showcase their work and skills.
+- Browse Other Rooms: Discover other developers’ projects, connect, and collaborate.
+- Real-Time Video Calling: Connect face-to-face through ZegoCloud’s video integration.
+- Room Updates & Deletion: Full CRUD (Create, Read, Update, Delete) capabilities for managing rooms.
 
 ## Getting Started 
 
