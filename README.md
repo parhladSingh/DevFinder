@@ -6,6 +6,10 @@ Welcome to DevFinder, a web application that connects developers by providing a 
 - **Live link** - https://devfinder-by-parhlad.vercel.app
 
 
+https://github.com/user-attachments/assets/ac41a6ae-aff1-4323-bc96-4f9697e07214
+
+
+
 ## 🚀Technologies Used
 #### Frontend:
 - Next.js: Server-side rendering and client-side SPA functionality.
