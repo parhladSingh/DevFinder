@@ -362,7 +362,7 @@ const Navbar = () => {
         </Link>
         <Link href="/" className="w-full lg:w-auto lg:ml-0 sm:ml-0 md:ml-0">
           <p className="lg:text-3xl sm:text-2xl md:text-2xl font-bold text-white">
-            DevFinder
+            EngiConnect
           </p>
         </Link>
       </div>
