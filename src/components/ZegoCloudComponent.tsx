@@ -35,33 +35,7 @@ const ZegoCloudComponent: React.FC<ZegoCloudComponentProps> = ({ roomId }) => {
       mediaStream.getTracks().forEach(track => track.stop()); // Stop all active tracks
       mediaStreamRef.current = null; // Clear the reference
     }
-  };
-
-  // useEffect(() => {
-  //   const initZego = async () => {
-  //     if (roomId && meetingRef.current && !zegoInstanceRef.current) {
-  //       const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(450396304, "serverSecret", roomId, "userID", "User Name");
-  //       const instance = ZegoUIKitPrebuilt.create(kitToken);
-  //       zegoInstanceRef.current = instance;
-
-  //       instance.joinRoom({
-  //         container: meetingRef.current,
-  //         onJoinRoom: () => startMediaStream(),
-  //         onLeaveRoom: () => stopMediaStreams(mediaStreamRef.current),
-  //       });
-  //     }
-  //   };
-
-  //   initZego();
-
-  //   socket.on("opponent_rejected", () => setIsRejected(true));
-
-  //   return () => {
-  //     socket.off("opponent_rejected");
-  //     stopMediaStreams(mediaStreamRef.current);
-  //   };
-  // }, [roomId, socket]);
-    
+  };   
   useEffect(() => {
     const initZego = async () => {
       if (roomId && meetingRef.current && !zegoInstanceRef.current) {
